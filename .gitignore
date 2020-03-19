@@ -24,3 +24,6 @@ hs_err_pid*
 
 # intellij folder
 .idea/
+
+# ignore build output
+out/
