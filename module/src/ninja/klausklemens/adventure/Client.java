@@ -1,11 +1,22 @@
 package ninja.klausklemens.adventure;
 
-import javax.swing.JFrame;
 import java.awt.*;
+import java.util.Scanner;
 
-public class Client extends JFrame implements Runnable {
+public class Client implements Runnable {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Client());
+
+		Scanner s = new Scanner(System.in);
+		/*while (true) {
+			if (s.hasNextLine()) {
+				if (s.hasNextFloat()) {
+					Sprite.SPEED = s.nextFloat();
+				} else {
+					System.out.println("\"" + s.nextLine() + "\" is no float");
+				}
+			}
+		}*/
 	}
 
 	@Override

@@ -4,19 +4,22 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ClientGui extends JFrame {
-	public Board background;
+	public Board board;
+	public Sprite dude;
 
 	public ClientGui() {
-		background = new Board();
-		add(background);
+		board = new Board();
+		add(board);
 
-		Dimension size = background.getPreferredSize();
+		Dimension size = board.getPreferredSize();
 		size.height = size.height + 37;
 		setSize(size);
 
-		setTitle("Test");
+		pack();
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		setTitle("Test");
 
 		setVisible(true);
 	}
